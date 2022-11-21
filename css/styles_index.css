@@ -93,7 +93,20 @@ header{
         text-shadow: 0 0 10px #fff;
         font-weight: 600;
     }
-   
+
+    /* header */
+   header{
+        margin-right: 0;
+        margin-left: 0;
+   }
+
+   .title{
+        padding-top: 0;
+        padding-bottom: 0.5em;
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 0 0 10px #fff;
+    }
 
 
 }
