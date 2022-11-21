@@ -37,17 +37,16 @@ function loadModifyEliminarBtns(text, id)
 function loadBtnCargar(){
     let $divBotones = document.getElementById("formDivBtn");
     let $btn = document.createElement("button");
-    let $icono = document.createElement("svg");
-    $img.classList.add("icono");
-    $img.setAttribute("src", "./imagenes/icono_guardar.png");
-    $img.setAttribute("alt", "icono guardar");
+    let $icono = document.createElement("i");
+    $icono.classList.add("bi");
+    $icono.classList.add("bi-hdd");
     
     $btn.classList.add("btn");
     $btn.classList.add("btn-success");
-    $btn.textContent = "Guardar";
+    $btn.textContent = " Guardar";
     $btn.setAttribute("id", "btnCargar");
     $divBotones.prepend($btn); 
-    $btn.prepend($img);
+    $btn.prepend($icono);
 }
 
 function loadClickedAnuncio(inputs, anuncio)
