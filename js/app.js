@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
 });
 
 //Seteo comportamiento botones
-let formBtns = document.getElementsByClassName('formButton'); 
+let formBtns = document.getElementsByClassName('btn'); 
 avoidFormSubmit(formBtns)
 
 //Validacion de los campos del formulario. Cargo los inputs a un array y les asigno eventos y estilos

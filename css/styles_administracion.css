@@ -16,7 +16,7 @@ body{
 }
 
 #portada{
-    width: 78%;
+    width: 70%;
     height: 250px;
 }
 
@@ -117,39 +117,13 @@ th{
     background-color: #e0f1f3;
 }
 
-input{
-    padding: 0.3em;
-    font-size: medium;
-}
-
 #formDivBtn{
     display: flex;
     justify-content: space-around;
 }
 
-.formButton{
-    border-radius: 12px;
-    padding: 1em;
-    font-size: 0.7em;
-    text-align: center;
-    font-weight: 800;
-}
-
 #btnCargar{
-    background-color: greenyellow;
     width: 25%;
-}
-
-#btnEliminar{
-    background-color: rgb(240, 49, 39);
-}
-
-#btnModificar{
-    background-color: violet;
-}
-
-#btnCancelar{
-    background-color: rgb(84, 117, 238);
 }
 
 .formButton:hover{
@@ -283,6 +257,62 @@ footer{
     .list-unstyled .list-inline-item{
         font-weight: 600;
         padding-bottom: 0.5em;
+    }
+
+    /* header */
+    .title{
+        font-size: 2em;
+    }
+
+    #portada{
+        width: 92%;
+        height: 150px;
+    }
+
+    /* form */
+    #ABM_Form{
+        margin: 0.6em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    #formTitle{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .inputsAuto{
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    #txtPuertas, #txtKms, #txtPotencia{
+        width: 100%;
+    }
+
+    .icono{
+        width: 20%;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    #btnCargar{
+        height: 80px;
+    }
+
+    #btnModificar, #btnEliminar, #btnCancelar, #btnCargar{
+        width: 5.5em;
+    }
+
+    #formDivBtn{
+        display: block;
+        padding-left: 0.5em;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .btn{
+        margin-bottom: 1em;
     }
 
     

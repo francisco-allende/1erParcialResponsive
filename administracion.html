@@ -34,13 +34,13 @@
   
     
     <!--Formulario que añade a la tabla dinamica -->
-    <form id="ABM_Form">
+    <div class="container">
+    <form class="form-group" id="ABM_Form">
         <p id="formTitle">Cargar anuncio</p><br>
-        <label for="txtTitulo">Titulo:</label><br>
-        <input type="text" name="titulo" id="txtTitulo" placeholder="Titulo" size="50"/>
-        <br>
+        <label for="txtTitulo">Titulo:</label>
+        <input type="text" name="titulo" id="txtTitulo" placeholder="Titulo" class="form-control"/>
         <small></small>
-        <br/><br/>
+        <br>
 
         <label for="txtTransaccion">Transaccion:</label>
         <br><br>
@@ -52,41 +52,38 @@
         <small></small>
         <br><br>
 
-        <label for="txtDescripcion">Descripcion:</label><br>
-        <input type="text" name="descripcion" id="txtDescripcion" placeholder="Descripcion" size="50" />
-        <br>
+        <label for="txtDescripcion">Descripcion:</label>
+        <input type="text" name="descripcion" id="txtDescripcion" placeholder="Descripcion" class="form-control" />
         <small></small>
-        <br><br>
+        <br>
 
         <label for="txtPrecio">Precio:</label><br>
-        <input type="number" name="precio" id="txtPrecio" placeholder="Precio" />
-        <br>
+        <input type="number" name="precio" id="txtPrecio" placeholder="Precio" class="form-control"/>
         <small></small>
-        <br><br>
+        <br>
+
         <div class="inputsAuto">
             <img src="./imagenes/icono_puerta.png" alt="icono puerta" class="icono">
-            <input type="number" name="puertas" id="txtPuertas" placeholder="Puertas" />
-            <br>
+            <input type="number" name="puertas" id="txtPuertas" placeholder="Puertas" class="form-control" />
             <small></small>
     
             <img src="./imagenes/icono_kms.png" alt="icono kms" class="icono">
-            <input type="number" name="kms" id="txtKms" placeholder="KMs"/>
-            <br>
+            <input type="number" name="kms" id="txtKms" placeholder="KMs" class="form-control"/>
             <small></small>
     
             <img src="./imagenes/icono_potencia.png" alt="icono potencia" class="icono"><br>
-            <input type="number" name="potencia" id="txtPotencia" placeholder="Potencia"/>
-            <br>
+            <input type="number" name="potencia" id="txtPotencia" placeholder="Potencia" class="form-control"/>
             <small></small>
         </div>
     
 
         <div id="formDivBtn">
-            <button class="formButton" id="btnCargar"><img src="./imagenes/icono_guardar.png" alt="icono guardar" class="icono">  Guardar</button>
-            <button class="formButton" id="btnCancelar">Cancelar</button>
+            <button class="btn btn-success" id="btnCargar"><img src="./imagenes/icono_guardar.png" alt="icono guardar" class="icono">  Guardar</button>
+            <button class="btn btn-warning" id="btnCancelar">Cancelar</button>
             <!--Los botones de eliminar y modificar se crean en el DOM-->
         </div>
     </form>  
+</div>
 
     <!--Spinner de carga-->
     <div id="containerSpinner">   

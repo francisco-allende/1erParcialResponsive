@@ -21,7 +21,12 @@ function loadModifyEliminarBtns(text, id)
     if(formBtns.children.length <= 3)
     {
         let $btn = document.createElement("button");
-        $btn.classList.add("formButton")
+        $btn.classList.add("btn");
+        if(id == "btnEliminar"){
+            $btn.classList.add("btn-danger");
+        }else{
+            $btn.classList.add("btn-primary");
+        }
         $btn.textContent = text;
         $btn.setAttribute("id", id);
         formBtns.appendChild($btn);
@@ -37,12 +42,12 @@ function loadBtnCargar(){
     $img.setAttribute("src", "./imagenes/icono_guardar.png");
     $img.setAttribute("alt", "icono guardar");
     
-    $btn.classList.add("formButton")
+    $btn.classList.add("btn");
+    $btn.classList.add("btn-success");
     $btn.textContent = "Guardar";
     $btn.setAttribute("id", "btnCargar");
-    $divBotones.prepend($btn); //append al final, prepend al principio
+    $divBotones.prepend($btn); 
     $btn.prepend($img);
-
 }
 
 function loadClickedAnuncio(inputs, anuncio)
@@ -83,7 +88,7 @@ function vaciar(inputs)
         if(element.name != "transaccion")
         {
             element.value = "";
-            const $small = element.nextElementSibling.nextElementSibling;
+            const $small = element.nextElementSibling;
             $small.textContent = "";
         }
         else

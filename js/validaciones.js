@@ -112,7 +112,7 @@ function validarSubmit(inputs)
 
 const setError = (input) =>
 {
-    const $small = input.nextElementSibling.nextElementSibling;
+    const $small = input.nextElementSibling;
     $small.textContent = "Error, campo invalido";
     $small.classList.add("error");
     input.classList.add("nonValid")
@@ -124,9 +124,11 @@ const setError = (input) =>
 
 const setSuccess = (input) =>
 {
-    const $small = input.nextElementSibling.nextElementSibling;
-    $small.textContent = "✔";
-    $small.classList.add("success");
+    const $small = input.nextElementSibling;
+    if(input.type != "radio"){
+        $small.textContent = "✔";
+        $small.classList.add("success");
+    }
     input.classList.add("valid")  
     if(input.matches(".nonValid"))
     {
