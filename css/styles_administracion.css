@@ -28,12 +28,11 @@ body{
 /*      Navbar      */
 
 nav {
-    display: flex;
-    justify-content: space-around;
     background-color: #095fd7;
     padding-bottom: 0.3em;
     line-height: 2em;
     text-align: center;
+    font-size: 1.5em;
 }
 
 #menu {
@@ -42,20 +41,19 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav_li{
-    display: block;
-    list-style: none;
-    color: #fff;
-}
-
 .href_non_decoration{
     text-decoration: none;
     color: #fff;
+}
+.href_non_decoration:hover{
+    text-decoration: none;
+    color: rgb(215, 193, 193);
 }
 
 #img_logo{
     width: 150px;
 }
+
 /*      Fin Navbar      */
 
 
@@ -259,5 +257,34 @@ footer{
 
 #copy_footer{
     list-style: none;
+}
+
+@media(max-width:950px) {
+    /* navbar */
+    .navbar{
+        font-size: 0.8em;
+        border-bottom: 1px solid black;
+        align-items: flex-end;
+    }
+    #img_logo{
+        width: 70px;
+        padding-bottom: 1em;
+    }
+
+    .navbar .navbar-expand-lg .justify-content-around{
+        display: block;
+        justify-content: center;
+    }
+
+    .list-inline{
+        margin: 0%;
+    }
+
+    .list-unstyled .list-inline-item{
+        font-weight: 600;
+        padding-bottom: 0.5em;
+    }
+
+    
 }
 
