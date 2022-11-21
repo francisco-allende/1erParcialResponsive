@@ -20,39 +20,25 @@ body{
 }
 
 header{
-    display: flex;
     margin-right: 40%;
     margin-left: 1em;
+    background-color: transparent;
 
 }
 
 
 /*      Navbar      */
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: transparent;
-    font-size: 2em;
+.navbar {
+    font-size: 2.5em;
     padding-bottom: 0.3em;
     line-height: 100px;
     text-align: center;
-    height: 100px;
+    padding: 0%;
+    text-shadow: 0 0 2px #fff;
 }
 
-.menu {
-    margin: 0 1em;
-    justify-content: space-around;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.nav_li{
-    display: inline;
-    list-style: none;
-    color:  black;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-}
 
 .href_non_decoration{
     text-decoration: none;
@@ -60,7 +46,8 @@ nav {
 }
 
 #img_logo{
-    width: 150px;
+    width: 130px;
+    padding-bottom: 0.5em;
 }
 /*      Fin Navbar      */
 
@@ -77,3 +64,34 @@ nav {
 }
 
 /*      Fin Cards       */
+
+/* responsive. Override bootstrap classes to make them responsive */
+
+@media(max-width:800px) {
+    .navbar{
+        font-size: 1em;
+        border-bottom: 1px solid black;
+        align-items: center;
+    }
+    #img_logo{
+        width: 100px;
+        padding-bottom: 0;
+    }
+
+    .navbar .navbar-expand-lg .justify-content-around{
+        display: block;
+        justify-content: center;
+    }
+
+    .list-inline{
+        margin: 0%;
+    }
+
+    .list-unstyled .list-inline-item{
+        text-shadow: 0 0 10px #fff;
+        font-weight: 600;
+    }
+   
+
+
+}
