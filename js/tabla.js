@@ -6,6 +6,11 @@ const buildTable=(data)=>
 
     let $divTabla = document.getElementById("divTabla");
     let $table = document.createElement('table');
+    $table.classList.add("table");
+    $table.classList.add("table-orderer");
+    $table.classList.add("table-striped"); 
+    $table.classList.add("table-light");
+    $table.classList.add("table-hover");
     $table.appendChild(buildColumns(data[0]));
     $table.appendChild(buildRows(data));
 
@@ -14,7 +19,8 @@ const buildTable=(data)=>
 
 function buildColumns(obj)
 {   
-    const $thead = document.createElement("thead")
+    const $thead = document.createElement("thead"); 
+    $thead.classList.add("table-dark"); 
     const $fila = document.createElement("tr");
 
     for (const key in obj) 
