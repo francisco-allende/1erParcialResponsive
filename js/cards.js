@@ -14,7 +14,7 @@ function buildCards() {
     if(data != null){
         data.forEach(element => {
             $divRow.innerHTML += `
-              <div class="col-3">
+              <div class="col-lg-3 col-sm-12">
                   <div class="card text-center border-dark">
                     <div class="card-title">
                       <h3> ${element.titulo} </h3>

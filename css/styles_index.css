@@ -113,5 +113,8 @@ header{
         text-align: center;
     }
 
-
+    /* cards. Lo mas importante es cambiar el col-lg-3 por col-sm-12 que ya esta en cards.js */
+    .card{
+        margin-bottom: 1.5em;
+    }
 }
