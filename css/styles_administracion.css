@@ -233,6 +233,7 @@ footer{
     list-style: none;
 }
 
+
 @media(max-width:950px) {
     /* navbar */
     .navbar{

@@ -37,7 +37,7 @@ function loadModifyEliminarBtns(text, id)
 function loadBtnCargar(){
     let $divBotones = document.getElementById("formDivBtn");
     let $btn = document.createElement("button");
-    let $img = document.createElement("img");
+    let $icono = document.createElement("svg");
     $img.classList.add("icono");
     $img.setAttribute("src", "./imagenes/icono_guardar.png");
     $img.setAttribute("alt", "icono guardar");
