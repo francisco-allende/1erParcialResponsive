@@ -61,7 +61,6 @@ nav {
 
 #divTabla{
     overflow-x:auto;
-    margin: 0.3em;
 }
 
 /* Fin tabla dinaimica */
@@ -185,7 +184,7 @@ footer{
     justify-content: start;
     font-size: 1.2em;
     padding-bottom: 0.3em;
-    line-height: 100px;
+    line-height: 60px;
     text-align: center;
 }
 
@@ -201,10 +200,6 @@ footer{
     list-style: none;
     padding-left: 1.5em;
     padding-right: 1.5em;
-}
-
-#copy_footer{
-    list-style: none;
 }
 
 
@@ -293,9 +288,26 @@ footer{
     /* tabla */
     #divTabla{
         margin-bottom: 1em;
-        overflow-x:auto;
     }
 
+    /* footer */
+    footer{
+        display: block;
+        font-size: 1.2em;
+        line-height: 60px;
+        text-align: center;
+    }
+    
+    #menu_footer{
+        margin: 0;
+    }
+    
+    .footer_li{
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     
 }
 
