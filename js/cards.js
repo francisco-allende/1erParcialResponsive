@@ -29,7 +29,7 @@ function buildCards() {
                       </ul>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-primary">Ver Vehiculo</button>
+                        <button class="btn btn-success">Ver Vehiculo</button>
                     </div>
                     
                   </div>

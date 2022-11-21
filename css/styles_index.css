@@ -17,6 +17,7 @@ body{
     padding-bottom: 0.5em;
     font-size: 3em;
     font-family: Noto Sans, sans-serif;
+    text-shadow: 0 0 10px #fff;
 }
 
 header{
@@ -52,6 +53,11 @@ header{
 /*      Fin Navbar      */
 
 /*      Cards       */
+
+.card{
+    background-color: #095fd7;
+    color: #fff;
+}
 
 .card:hover {
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
@@ -105,7 +111,6 @@ header{
         padding-bottom: 0.5em;
         font-size: 2em;
         text-align: center;
-        text-shadow: 0 0 10px #fff;
     }
 
 
